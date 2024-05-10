@@ -125,13 +125,13 @@ const useAuth = (): useAuthPayload => {
           return;
         }
 
-        axios.defaults.headers.common = { Authorization: `bearer ${token}` };
+        axios.defaults.headers.common = { Authorization: `Bearer ${token}` };
         const { data } = await axios.get('/auth-user');
         if (!data) {
           setIsAuthFetching(false);
           return;
         }
-        dispatchAuthUser(data);
+        dispatchAuthUser(data?.data);
         setAuthError(null);
       } catch (error) {
         setAuthError(error);

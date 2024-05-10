@@ -16,7 +16,7 @@ interface User {
 
 const logIn = async (user: User) => {
   const response = await axios.post('/login', user);
-  return response;
+  return response?.data;
 };
 
 const INITIAL_STATE = {
