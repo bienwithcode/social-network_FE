@@ -4,6 +4,9 @@ The web app is built with the [React](https://reactjs.org) framework [Next.js](h
 
 refer to [template](https://github.com/DimiMikadze/orca)
 
+# Social network Backend
+[Golang](https://github.com/bienwithcode/social-network_BE)
+
 ### Running the app in development mode
 
 ```
